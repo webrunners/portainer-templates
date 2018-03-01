@@ -1,37 +1,5 @@
 [
   {
-  "type": "container",
-  "title": "Runner",
-  "description": "Custom GitLab Runner",
-  "image": "webrunners/gitlab-runner-service:latest",
-  "env": [
-      {
-      "name": "DESCRIPTION",
-      "label": "alt name"
-      },
-      {
-      "name":  "EXECUTOR",
-      "label": "shell|docker. default shell"
-      },
-      {
-      "name": "SERVICE",
-      "label": "name of secret. secret could be used as env file."
-      },
-      {
-      "name": "TAG_LIST",
-      "label": "tag this runner. comma separated"
-      },
-      {
-      "name": "TOKEN",
-      "label": "projects runner token"
-      },
-      {
-      "name": "URL",
-      "label": "gitlab ci url"
-      }
-    ]
-  },
-  {
   "type": "stack",
   "title": "Runner",
   "description": "Custom GitLab Runner",
@@ -43,27 +11,28 @@
   "env": [
       {
       "name": "DESCRIPTION",
-      "label": "alt name"
+      "label": "DESCRIPTION (alt name)"
       },
       {
       "name":  "EXECUTOR",
-      "label": "shell|docker. default shell"
+      "label": "EXECUTOR (shell|docker. default shell)",
+      "set": "shell"
       },
       {
       "name": "SERVICE",
-      "label": "name of secret. secret could be used as env file."
+      "label": "SERVICE (name of secret)"
       },
       {
       "name": "TAG_LIST",
-      "label": "tag this runner. comma separated"
+      "label": "TAG_LIST (tag this runner. comma separated)"
       },
       {
       "name": "TOKEN",
-      "label": "projects runner token"
+      "label": "TOKEN (put this into secret)"
       },
       {
       "name": "URL",
-      "label": "gitlab ci url"
+      "label": "URL (gitlab ci url)"
       }
     ]
   }
