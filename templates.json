@@ -30,5 +30,41 @@
       "label": "gitlab ci url"
       }
     ]
+  },
+  {
+  "type": "stack",
+  "title": "Runner",
+  "description": "Custom GitLab Runner",
+  "image": "webrunners/gitlab-runner-service:latest",
+  "repository": {
+      "url": "https://github.com/webrunners/gitlab-runner-service",
+      "stackfile": "runner.yml"
+    },
+  "env": [
+      {
+      "name": "DESCRIPTION",
+      "label": "alt name"
+      },
+      {
+      "name":  "EXECUTOR",
+      "label": "shell|docker. default shell"
+      },
+      {
+      "name": "SERVICE",
+      "label": "name of secret. secret could be used as env file."
+      },
+      {
+      "name": "TAG_LIST",
+      "label": "tag this runner. comma separated"
+      },
+      {
+      "name": "TOKEN",
+      "label": "projects runner token"
+      },
+      {
+      "name": "URL",
+      "label": "gitlab ci url"
+      }
+    ]
   }
 ]
