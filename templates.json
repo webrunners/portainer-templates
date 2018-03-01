@@ -1,0 +1,6 @@
+{
+  "type": "container",
+  "title": "Runner",
+  "description": "Custom GitLab Runner",
+  "image": "webrunners/gitlab-runner-service:latest"
+}
