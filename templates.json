@@ -1,4 +1,4 @@
-{
+[{
   "type": "container",
   "title": "Runner",
   "description": "Custom GitLab Runner",
@@ -29,4 +29,4 @@
     "label": "gitlab ci url"
     }
   ]
-}
+}]
