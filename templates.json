@@ -3,7 +3,6 @@
   "type": "stack",
   "title": "Runner",
   "description": "Custom GitLab Runner",
-  "image": "webrunners/gitlab-runner-service:latest",
   "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
@@ -33,6 +32,29 @@
       {
       "name": "URL",
       "label": "URL (gitlab ci url)"
+      }
+    ]
+  },
+  {
+  "type": "stack",
+  "title": "WhoamEye",
+  "description": "Service Example",
+  "repository": {
+      "url": "https://github.com/webrunners/gitlab-runner-service",
+      "stackfile": "teststack.yml"
+    },
+  "env": [
+      {
+      "name": "DOMAIN",
+      "label": "DOMAIN"
+      },
+      {
+      "name": "REPLICAS",
+      "label": "REPLICAS"
+      },
+      {
+      "name":  "SERVICE_PORT",
+      "label": "SERVICE_PORT"
       }
     ]
   }
