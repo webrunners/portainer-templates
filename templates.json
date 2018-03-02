@@ -49,10 +49,6 @@
       "label": "DOMAIN"
       },
       {
-      "name": "REPLICAS",
-      "label": "REPLICAS"
-      },
-      {
       "name":  "SERVICE_PORT",
       "label": "SERVICE_PORT"
       }
