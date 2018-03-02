@@ -15,8 +15,7 @@
       },
       {
       "name":  "EXECUTOR",
-      "label": "EXECUTOR (shell|docker. default shell)",
-      "set": "shell"
+      "label": "EXECUTOR (shell|docker. default shell)"
       },
       {
       "name": "SERVICE",
