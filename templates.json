@@ -8,6 +8,7 @@
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
+  "note": "You should put at least the TOKEN into a docker secret named like SERVICE. Otherwise the token would be clear written in docker inspect.",
   "env": [
       {
       "name": "DESCRIPTION",
