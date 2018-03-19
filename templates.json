@@ -23,7 +23,7 @@
       },
       {
       "name": "URL",
-      "label": "URL (GitLab ci url)"
+      "label": "URL (GitLab ci url. Commonly: GitLab-URL/ci)"
       }
     ]
   },
