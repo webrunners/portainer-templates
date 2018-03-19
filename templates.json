@@ -7,7 +7,7 @@
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
-  "note": "First create a docker secret, named like SERVICE. You must define TOKEN env variable in there. Name of stack should end with '_runner'",
+  "note": "First create a docker secret, named like 'Name'. You must define TOKEN env variable in there. Name should end with '_runner'",
   "env": [
       {
       "name": "EXECUTOR",
