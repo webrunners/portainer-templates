@@ -7,9 +7,12 @@
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
-  "name": "teststack",
-  "note": "You should put at least the TOKEN into a docker secret named like SERVICE. Otherwise the token would be clear written in docker inspect.",
+  "note": "You must put at the TOKEN into a docker secret named like SERVICE.",
   "env": [
+      {
+      "name": "SERVICE",
+      "label": "SERVICE (Name of the secret to read from)",
+      },
       {
       "name": "DESCRIPTION",
       "label": "DESCRIPTION (Alt. name)"
@@ -19,17 +22,8 @@
       "label": "EXECUTOR ([shell|docker] Default: shell)"
       },
       {
-      "name": "SERVICE",
-      "label": "SERVICE (Name of the runner which will be created and the docker secret to read from)",
-      "set": "teststack"
-      },
-      {
       "name": "TAG_LIST",
       "label": "TAG_LIST (Tag this runner. Comma separated)"
-      },
-      {
-      "name": "TOKEN",
-      "label": "TOKEN (Put this into secret)"
       },
       {
       "name": "URL",
