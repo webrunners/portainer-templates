@@ -16,10 +16,6 @@
       {
       "name": "TAG_LIST",
       "label": "TAG_LIST (Tag this runner. Comma separated)"
-      },
-      {
-      "name": "URL",
-      "label": "URL (GitLab ci url. Commonly: GitLab-URL/ci)"
       }
     ]
   },
