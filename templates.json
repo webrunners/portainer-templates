@@ -10,10 +10,6 @@
   "note": "First create a docker secret, named like SERVICE. You must define TOKEN env variable in there.",
   "env": [
       {
-      "name": "SERVICE",
-      "label": "Should be the same as 'NAME'"
-      },
-      {
       "name": "EXECUTOR",
       "label": "EXECUTOR ([shell|docker] Default: shell)"
       },
