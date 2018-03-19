@@ -11,7 +11,7 @@
   "env": [
       {
       "name": "SERVICE",
-      "label": "SERVICE (Name of the secret to read from)",
+      "label": "SERVICE (Name of the secret to read from)"
       },
       {
       "name": "DESCRIPTION",
