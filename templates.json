@@ -7,7 +7,7 @@
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
-  "note": "You must put at the TOKEN into a docker secret named like SERVICE.",
+  "note": "You must put TOKEN into a docker secret named like SERVICE.",
   "env": [
       {
       "name": "SERVICE",
@@ -18,7 +18,7 @@
       "label": "DESCRIPTION (Alt. name)"
       },
       {
-      "name":  "EXECUTOR",
+      "name": "EXECUTOR",
       "label": "EXECUTOR ([shell|docker] Default: shell)"
       },
       {
