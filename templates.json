@@ -14,10 +14,6 @@
       "label": "SERVICE (Name of the secret to read from)"
       },
       {
-      "name": "DESCRIPTION",
-      "label": "DESCRIPTION (Alt. name)"
-      },
-      {
       "name": "EXECUTOR",
       "label": "EXECUTOR ([shell|docker] Default: shell)"
       },
