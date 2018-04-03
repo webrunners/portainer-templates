@@ -11,7 +11,7 @@
   "env": [
       {
       "name": "EXECUTOR",
-      "label": "EXECUTOR",
+      "label": "EXECUTOR ([shell|docker] Default: shell)",
       "select": [
           {
             "text": "shell",
