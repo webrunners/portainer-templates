@@ -11,7 +11,17 @@
   "env": [
       {
       "name": "EXECUTOR",
-      "label": "EXECUTOR ([shell|docker] Default: shell)"
+      "label": "EXECUTOR",
+      "select": [
+          {
+            "text": "shell",
+            "value": "shell"
+          },
+          {
+            "text": "docker",
+            "value": "docker"
+          }
+        ]
       },
       {
       "name": "TAG_LIST",
