@@ -7,7 +7,7 @@
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
-  "note": "First create a docker secret, named like 'Name'. You must define TOKEN env variable in there. Name should end with '_runner'.\nAdditionally, create a docker config named 'runner', containing defaults like CI_SERVER_URL.",
+  "note": "First create a docker secret, named like 'Name'. You must define TOKEN env variable in there. Name should end with '_runner'.\nAdditionally, create a docker config named 'runner.defaults', containing defaults like CI_SERVER_URL.",
   "env": [
       {
       "name": "EXECUTOR",
@@ -26,6 +26,10 @@
       {
       "name": "TAG_LIST",
       "label": "TAG_LIST (Tag this runner. Comma separated)"
+      },
+      {
+      "name": "VOLUMES",
+      "label": "VOLUMES (Add volume definitions in short form. Comma separated)"
       }
     ]
   },
