@@ -29,7 +29,7 @@
       },
       {
       "name": "VOLUMES",
-      "label": "VOLUMES (Add volumes long form. Semicolon separated)"
+      "label": "VOLUMES (Add volumes by name. Comma separated)"
       }
     ]
   },
