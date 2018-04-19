@@ -35,8 +35,8 @@
   },
   {
   "type": "stack",
-  "title": "WhoamEye",
-  "description": "Service Example",
+  "title": "whoami",
+  "description": "Service example - simply returning hostname",
   "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "teststack.yml"
@@ -44,11 +44,11 @@
   "env": [
       {
       "name": "DOMAIN",
-      "label": "DOMAIN"
+      "label": "DOMAIN (The domain service will be available)"
       },
       {
-      "name":  "SERVICE_PORT",
-      "label": "SERVICE_PORT"
+      "name": "NO_AUTH",
+      "label": "Disable http_auth (Default: 0)"
       }
     ]
   }
