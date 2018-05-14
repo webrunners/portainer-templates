@@ -61,7 +61,7 @@
       },
       {
       "name": "AUTOSIGN",
-      "label": "Just issue the certificate if needed, or check if a container-label for proxy_acme service exists: 'domain.reversed: domain,alternative_domains' (0/1*)"
+      "label": "Allow issue the certificate. If not, check if a container-label for proxy_acme service exists: 'domain.reversed: domain,alternative_domains'. This is to prevent hitting rate_limits. (0/1*)"
       }
     ]
   }
