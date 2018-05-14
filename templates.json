@@ -36,7 +36,8 @@
   {
   "type": "stack",
   "title": "whoami",
-  "description": "Service example - simply returning hostname. *: default value, **: Required value",
+  "description": "Service example - simply returning container hostname",
+  "note": "*: default value, **: Required value",
   "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "teststack.yml"
