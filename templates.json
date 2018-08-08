@@ -8,7 +8,7 @@
       "OPS"
     ],
     "platform": "linux",
-    "logo": "https://www18.webrunners.de/inc/wrlogo.jpeg",
+    "logo": "https://code.webrunners.de/uploads/-/system/appearance/header_logo/1/webrunners_logo_smaller.svg",
     "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
@@ -47,7 +47,7 @@
       "OPS"
     ],
     "platform": "linux",
-    "logo": "https://www18.webrunners.de/inc/wrlogo.jpeg",
+    "logo": "https://code.webrunners.de/uploads/-/system/appearance/header_logo/1/webrunners_logo_smaller.svg",
     "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "teststack.yml"
