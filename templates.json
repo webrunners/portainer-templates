@@ -1,18 +1,23 @@
 [
   {
-  "type": "stack",
-  "title": "Runner",
-  "description": "Custom GitLab Runner",
-  "repository": {
+    "type": "stack",
+    "title": "Runner",
+    "description": "Custom GitLab Runner",
+    "note": "First create a docker secret, named like 'Name' (stack_name). You must define TOKEN env variable in there. (Stack-) Name should end with '_runner'.\nAdditionally, create a docker config named 'runner.defaults', containing defaults like CI_SERVER_URL. To update those auto added files, temporarily create a docker config: runner.maintain.",
+    "categories": [
+      "OPS"
+    ],
+    "platform": "linux",
+    "logo": "https://www18.webrunners.de/inc/wrlogo.jpeg",
+    "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "runner.yml"
     },
-  "note": "First create a docker secret, named like 'Name' (stack_name). You must define TOKEN env variable in there. (Stack-) Name should end with '_runner'.\nAdditionally, create a docker config named 'runner.defaults', containing defaults like CI_SERVER_URL. To update those auto added files, temporarily create a docker config: runner.maintain.",
-  "env": [
+    "env": [
       {
-      "name": "EXECUTOR",
-      "label": "EXECUTOR ([shell|docker] Default: shell)",
-      "select": [
+        "name": "EXECUTOR",
+        "label": "EXECUTOR ([shell|docker] Default: shell)",
+        "select": [
           {
             "text": "shell",
             "value": "shell"
@@ -24,44 +29,49 @@
         ]
       },
       {
-      "name": "TAG_LIST",
-      "label": "TAG_LIST (Tag this runner. Comma separated)"
+        "name": "TAG_LIST",
+        "label": "TAG_LIST (Tag this runner. Comma separated)"
       },
       {
-      "name": "VOLUMES",
-      "label": "VOLUMES (Add volumes by name. Comma separated)"
+        "name": "VOLUMES",
+        "label": "VOLUMES (Add volumes by name. Comma separated)"
       }
     ]
   },
   {
-  "type": "stack",
-  "title": "whoami",
-  "description": "Service example - simply returning container hostname",
-  "note": "*: default value, **: Required value",
-  "repository": {
+    "type": "stack",
+    "title": "whoami",
+    "description": "Service example - simply returning container hostname",
+    "note": "*: default value, **: Required value",
+    "categories": [
+      "OPS"
+    ],
+    "platform": "linux",
+    "logo": "https://www18.webrunners.de/inc/wrlogo.jpeg",
+    "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "teststack.yml"
     },
-  "env": [
+    "env": [
       {
-      "name": "DOMAIN",
-      "label": "The domain under which the service will be available. **"
+        "name": "DOMAIN",
+        "label": "The domain under which the service will be available. **"
       },
       {
-      "name": "NO_AUTH",
-      "label": "Disable http_auth (0*/1)"
+        "name": "NO_AUTH",
+        "label": "Disable http_auth (0*/1)"
       },
       {
-      "name": "STAGING",
-      "label": "Use Letsencrypt staging server to prevent rate_limit hit (0/1*)"
+        "name": "STAGING",
+        "label": "Use Letsencrypt staging server to prevent rate_limit hit (0/1*)"
       },
       {
-      "name": "ISSUE",
-      "label": "Request Letsencrypt to get a certificate, or force reissue if domain changes. If not check only if a certificate is already in place (0/1*)"
+        "name": "ISSUE",
+        "label": "Request Letsencrypt to get a certificate, or force reissue if domain changes. If not check only if a certificate is already in place (0/1*)"
       },
       {
-      "name": "AUTOSIGN",
-      "label": "Allow issue the certificate. If not, check if a container-label for proxy_acme service exists: 'domain.reversed: domain,alternative_domains'. This is to prevent hitting rate_limits. (0/1*)"
+        "name": "AUTOSIGN",
+        "label": "Allow issue the certificate. If not, check if a container-label for proxy_acme service exists: 'domain.reversed: domain,alternative_domains'. This is to prevent hitting rate_limits. (0/1*)"
       }
     ]
   }
