@@ -34,7 +34,7 @@
       },
       {
         "name": "VOLUMES",
-        "label": "VOLUMES (Add volumes by name. Comma separated)"
+        "label": "VOLUMES (Add volume names. Comma separated)"
       }
     ]
   },
@@ -42,7 +42,7 @@
     "type": "stack",
     "title": "whoami",
     "description": "Service example - simply returning container hostname",
-    "note": "*: default value, **: Required value",
+    "note": "Port: 8000",
     "categories": [
       "OPS"
     ],
@@ -51,28 +51,6 @@
     "repository": {
       "url": "https://github.com/webrunners/gitlab-runner-service",
       "stackfile": "teststack.yml"
-    },
-    "env": [
-      {
-        "name": "DOMAIN",
-        "label": "The domain under which the service will be available. **"
-      },
-      {
-        "name": "NO_AUTH",
-        "label": "Disable http_auth (0*/1)"
-      },
-      {
-        "name": "STAGING",
-        "label": "Use Letsencrypt staging server to prevent rate_limit hit (0/1*)"
-      },
-      {
-        "name": "ISSUE",
-        "label": "Request Letsencrypt to get a certificate, or force reissue if domain changes. If not check only if a certificate is already in place (0/1*)"
-      },
-      {
-        "name": "AUTOSIGN",
-        "label": "Allow issue the certificate. If not, check if a container-label for proxy_acme service exists: 'domain.reversed: domain,alternative_domains'. This is to prevent hitting rate_limits. (0/1*)"
-      }
-    ]
+    }
   }
 ]
