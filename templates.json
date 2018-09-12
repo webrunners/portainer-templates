@@ -3,7 +3,7 @@
     "type": "stack",
     "title": "Runner",
     "description": "Custom GitLab Runner",
-    "note": "First create a docker secret, named like 'Name' (stack_name). You must define TOKEN env variable in there. (Stack-) Name should end with '_runner'.\nAdditionally, create a docker config named 'runner.defaults', containing defaults like CI_SERVER_URL. To update those auto added files, temporarily create a docker config: runner.maintain.",
+    "note": "Check the comments and adapt at least CONFIG and SECRET",
     "categories": [
       "OPS"
     ],
@@ -31,10 +31,6 @@
       {
         "name": "TAG_LIST",
         "label": "TAG_LIST (Tag this runner. Comma separated)"
-      },
-      {
-        "name": "VOLUMES",
-        "label": "VOLUMES (Add volume names. Comma separated)"
       }
     ]
   },
