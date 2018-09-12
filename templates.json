@@ -31,6 +31,14 @@
       {
         "name": "TAG_LIST",
         "label": "TAG_LIST (Tag this runner. Comma separated)"
+      },
+      {
+        "name": "SECRET",
+        "label": "SECRET (Name of the secret that will be sources)"
+      },
+      {
+        "name": "CONFIG",
+        "label": "CONFIG (Name of the config that will be sourced)"
       }
     ]
   },
