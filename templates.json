@@ -29,16 +29,36 @@
         ]
       },
       {
+        "name": "MAINTAIN",
+        "label": "MAINTAIN (Disable selfupdate service with config, secret and volumes)"
+      },
+      {
+        "name": "OPTIONS",
+        "label": "OPTIONS (Additional gitlab-runner options)"
+      },
+      {
         "name": "TAG_LIST",
-        "label": "TAG_LIST (Tag this runner. Comma separated)"
+        "label": "TAG_LIST (Comma separated list of GitLab runner tags)"
       },
       {
-        "name": "SECRET",
-        "label": "SECRET (Name of the secret that will be sources)"
+        "name": "TOKEN",
+        "label": "TOKEN (Provide CI_SERVER_TOKEN as variable. Unsecure)"
       },
       {
-        "name": "CONFIG",
-        "label": "CONFIG (Name of the config that will be sourced)"
+        "name": "URL",
+        "label": "URL (Provide CI_SERVER_URL. Possibly provided by default config)"
+      },
+      {
+        "name": "VOLUMES",
+        "label": "VOLUMES (Not in MAINTAIN: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
+      },
+      {
+        "name": "URL_CONFIG",
+        "label": "URL_CONFIG (MAINTAIN only: Name of the config that contains the CI_SERVER_URL only)"
+      },
+      {
+        "name": "TOKEN_SECRET",
+        "label": "TOKEN_SECRET (MAINTAIN only: Name of the config that contains the CI_SERVER_TOKEN only)"
       }
     ]
   },
