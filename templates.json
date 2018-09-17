@@ -54,7 +54,7 @@
       },
       {
         "name": "URL_CONFIG",
-        "label": "URL_CONFIG (DISABLE_SELFUPDATE only: Name of the config that contains the CI_SERVER_URL only)"
+        "label": "URL_CONFIG (DISABLE_SELFUPDATE requires: Name of the config that contains the CI_SERVER_URL only)"
       },
       {
         "name": "TOKEN_SECRET",
