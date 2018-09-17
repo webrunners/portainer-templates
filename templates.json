@@ -58,7 +58,7 @@
       },
       {
         "name": "TOKEN_SECRET",
-        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE requires: Name of the config that contains the CI_SERVER_TOKEN only)"
+        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE requires: Name of the secret that contains the CI_SERVER_TOKEN only)"
       }
     ]
   },
