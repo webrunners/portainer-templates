@@ -42,11 +42,11 @@
       },
       {
         "name": "TOKEN",
-        "label": "TOKEN (Provide CI_SERVER_TOKEN as variable. Unsecure)"
+        "label": "TOKEN (Provide CI_SERVER_TOKEN as variable. Unsecure!! Overrides TOKEN_SECRET)"
       },
       {
         "name": "URL",
-        "label": "URL (Provide CI_SERVER_URL. Possibly provided by default config)"
+        "label": "URL (Provide CI_SERVER_URL. Possibly provided by default config. Overrides URL_CONFIG)"
       },
       {
         "name": "VOLUMES",
