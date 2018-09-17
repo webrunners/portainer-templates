@@ -15,8 +15,8 @@
     },
     "env": [
       {
-        "name": "BETA",
-        "label": "BETA (Disable selfupdate service with config, secret and volumes)"
+        "name": "DISABLE_SELFUPDATE",
+        "label": "DISABLE_SELFUPDATE (Disable selfupdate service with config, secret and volumes)"
       },
       {
         "name": "EXECUTOR",
@@ -50,15 +50,15 @@
       },
       {
         "name": "VOLUMES",
-        "label": "VOLUMES (Not in MAINTAIN: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
+        "label": "VOLUMES (Not for DISABLE_SELFUPDATE: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
       },
       {
         "name": "URL_CONFIG",
-        "label": "URL_CONFIG (MAINTAIN only: Name of the config that contains the CI_SERVER_URL only)"
+        "label": "URL_CONFIG (DISABLE_SELFUPDATE only: Name of the config that contains the CI_SERVER_URL only)"
       },
       {
         "name": "TOKEN_SECRET",
-        "label": "TOKEN_SECRET (MAINTAIN only: Name of the config that contains the CI_SERVER_TOKEN only)"
+        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE only: Name of the config that contains the CI_SERVER_TOKEN only)"
       }
     ]
   },
