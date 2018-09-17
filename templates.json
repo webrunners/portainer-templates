@@ -50,7 +50,7 @@
       },
       {
         "name": "VOLUMES",
-        "label": "VOLUMES (Not for DISABLE_SELFUPDATE: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
+        "label": "VOLUMES (DISABLE_SELFUPDATE does not: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
       },
       {
         "name": "URL_CONFIG",
@@ -58,7 +58,7 @@
       },
       {
         "name": "TOKEN_SECRET",
-        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE only: Name of the config that contains the CI_SERVER_TOKEN only)"
+        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE requires: Name of the config that contains the CI_SERVER_TOKEN only)"
       }
     ]
   },
