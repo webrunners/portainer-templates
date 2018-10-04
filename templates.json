@@ -15,10 +15,6 @@
     },
     "env": [
       {
-        "name": "DISABLE_SELFUPDATE",
-        "label": "DISABLE_SELFUPDATE (Disable selfupdate service with config, secret and volumes)"
-      },
-      {
         "name": "EXECUTOR",
         "label": "EXECUTOR ([shell|docker] Default: shell)",
         "select": [
@@ -33,34 +29,12 @@
         ]
       },
       {
-        "name": "OPTIONS",
-        "label": "OPTIONS (Additional gitlab-runner options)"
-      },
-      {
         "name": "TAG_LIST",
         "label": "TAG_LIST (Comma separated list of GitLab runner tags)"
       },
       {
-        "name": "TOKEN",
-        "label": "TOKEN (Provide CI_SERVER_TOKEN as variable. Unsecure!! Overrides TOKEN_SECRET)"
-      },
-      {
-        "name": "URL",
-        "label": "URL (Provide CI_SERVER_URL. Possibly provided by default config. Overrides URL_CONFIG)"
-      },
-      {
-        "name": "VOLUMES",
-        "label": "VOLUMES (DISABLE_SELFUPDATE does not: Comma separated list of volumes, that will be simple mounted like volumename:/volumename)"
-      },
-      {
-        "name": "URL_CONFIG",
-        "label": "URL_CONFIG (DISABLE_SELFUPDATE requires: Name of the config that contains the CI_SERVER_URL only)",
-        "default": "runner.CI_SERVER_URL",
-        "preset": false
-      },
-      {
         "name": "TOKEN_SECRET",
-        "label": "TOKEN_SECRET (DISABLE_SELFUPDATE requires: Name of the secret that contains the CI_SERVER_TOKEN only)"
+        "label": "TOKEN_SECRET (Name of the secret that contains the CI_SERVER_TOKEN only)"
       }
     ]
   },
