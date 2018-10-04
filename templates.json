@@ -3,7 +3,7 @@
     "type": "stack",
     "title": "Runner",
     "description": "Custom GitLab Runner",
-    "note": "Check and adapt the stack file. [*] Required setting",
+    "note": "Check and adapt the stack file after deployment. [*] Required setting",
     "categories": [
       "OPS"
     ],
