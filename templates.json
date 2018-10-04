@@ -3,7 +3,7 @@
     "type": "stack",
     "title": "Runner",
     "description": "Custom GitLab Runner",
-    "note": "Check the comments and adapt at least CONFIG and SECRET. [*] Required setting",
+    "note": "Check and adapt the stack file. [*] Required setting",
     "categories": [
       "OPS"
     ],
