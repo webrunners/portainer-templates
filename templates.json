@@ -34,7 +34,7 @@
       },
       {
         "name": "TOKEN_SECRET",
-        "label": "TOKEN_SECRET [*] (Name of the secret that contains the CI_SERVER_TOKEN only)"
+        "label": "TOKEN_SECRET [*] (Name of the secret that contains the CI_SERVER_TOKEN)"
       }
     ]
   },
